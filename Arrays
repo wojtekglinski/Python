@@ -1,0 +1,27 @@
+  
+n = int(input("Enter number of elements : "))
+print("Enter values for array")
+lst = []
+    
+for i in range(0, n):
+    number = int(input())
+  
+    lst.append(number)
+      
+print(lst)
+lst.insert(0, 99)
+print("New list ", lst)
+lst [0] = 100
+print("New list ", lst)
+lst2 = [500, 600, 700, 800, 900]
+lst.append(lst2)
+print(lst)
+lst2.remove(800)
+print(lst2)
+del lst[2]
+print(lst)
+grades =["A", "B", "C", "A", "A", "C"]
+numgrades = grades.count("A")
+print("Number of A's :", numgrades)
+index = grades.index('B')
+print(index)
