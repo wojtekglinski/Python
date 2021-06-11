@@ -1,0 +1,29 @@
+  
+class Student:
+  
+  def __init__(self, last, code, credits):
+    self.last = last
+    self.code = code
+    self.credits = credits
+    
+  def total(self):
+    if self.code == "I":
+      rate = 250.00
+    else:
+      rate = 500.00
+    
+    tuituion = float(rate)*float(self.credits)
+
+    return tuituion
+
+
+ilast = input("Enter last name ")
+dis = input("Enter disctric code ")
+totcredits = input("Enter amount of credits ")
+
+stu = Student(ilast, dis, totcredits)
+
+print("Last name :", stu.last)
+print("District code :", stu.code)
+print("Number of credits :", stu.credits)
+print("Total tuition", stu.total())
