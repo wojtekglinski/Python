@@ -1,0 +1,13 @@
+  
+def comptotal(ex1, ex2, ex3):
+  total = float(ex1) + float(ex2) + float(ex3)
+  avg = float(total)/3
+
+  return total, avg
+name = input("Enter name ")
+ex1 = float(input("Enter exam score 1 "))
+ex2 = float(input("Enter exam score 2 "))
+ex3 = float(input("Enter exam score 3 "))
+total, avg = comptotal(ex1, ex2, ex3)
+print("total is :", total)
+print("total is :", avg)
